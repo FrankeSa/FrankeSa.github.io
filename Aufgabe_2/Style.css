@@ -16,83 +16,102 @@ section {
 nav {
   position: fixed;
   top: 0px;
-  right: 0px;
-  margin-right: 220px;
+  right: 150px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  background-color:black;
+  text-align: center;
   }
+
+
 
 a { 
   color: white;
-  background: white;
+  float: left;
+  text-decoration: none;
 }
 
 a:hover {
   background: rgb(169, 173, 170);
 }
 
-li {
-  float: left;s
-  }
-
-li a {
-  display: block;
-  padding: 10px;
-  background-color: black;
-  text-decoration: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
- 
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 .currentlink {
-
   background-color: rgb(169, 173, 170);
   color: red;
 }
 
-div {
-
-background-color: rgb(197, 192, 192);
-color: white;
-}
-
-.round {
-  
-  width: 350px;
-  height: 30px; 
-  margin: 10px;
-}
-.message {
-  
-  width: 600px;
-  height: 80px; 
-  margin: 10px;
-}
 
 .headlineRed {
 
   color: rgb(175, 18, 18);
-  margin: 10px;
+  margin: 15px;
   height: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 50px; 
   margin-top: 200px;
 }
 
-.absenden  {
+h1 { color: rgb(175, 18, 18);
+}
 
-  width:  80px;
-  height: 30px; 
-  margin: 10px;
+textarea {
+background-color: rgb(206, 206, 202);
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border: 0px;
+display: block;
+margin: 15px;
+padding: 5px 80px 5px 5px;
 }
 
 
-.datenschutz {
-
-  color: gray;
-  margin: 10px;
+input {
+background-color: rgb(206, 206, 202);
+color:white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 15px;
+border: 0px;
+display: block;
+margin: 15px;
+padding: 5px 45px 5px 5px;
 }
+
+button{
+background-color: rgb(206, 206, 202);
+color:white;
+display: block;
+border: 0px;
+margin: 50px 15px 15px 15px;
+padding-top: 15px;
+padding-bottom: 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+div {
+ text-align: center;
+} 
+
+.facebookicon{
+  position: relative;
+  bottom: 30px;
+}
+
+.facebookicon:hover {
+  background-color: black
+}
+
+
+.datenschutztext {
+color: rgb(182, 174, 174);
+background-color: none;
+margin: 15px;
+}
+
+#dslink{
+  color: rgb(182, 174, 174);
+  background-color: none;
+  text-decoration-line: underline; 
+  }

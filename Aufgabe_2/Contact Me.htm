@@ -11,28 +11,38 @@
 
 <body>
         
-<header><img src="images/header.png" alt="Logo Loremipsum"></header>
+<header>
+    
+  <div>
+      <img src="images/header.png" alt="Logo Loremipsum">
+      <img class="facebookicon" src="./images/icon_facebook.png" alt="icon Facebook">
+
+</div>
+
+</header>
 
 <section>
  
   <h1 class="headlineRed">KONTAKT</h1>
 
-  <div class="round"> Vorname </div>
-  <div class="round"> Nachname </div>
-  <div class="round"> E-Mail </div>
-  <div class="message"> Nachrichten </div>
-  <br>
-  <p class="datenschutz">Mit Absenden dieser Nachricht bestätige ich den <u>Datenschutz.</u></p>
-  <div class="absenden">absenden</div>
+  <!--Kontakt-Felder-->
+  <input placeholder="Vorname" type="text"> 
+  <input placeholder="Nachname" type="text"> 
+  <input placeholder="E-Mail" type="text"> 
+  <textarea placeholder="Nachricht"></textarea> 
+  <p class="datenschutztext">Mit Absenden der Nachricht bestätige ich den <br> <a id="dslink" href="url">Datenschutz.</a></p>
+  <button>absenden</button>
+
+
 
 </section>
 
 
 <nav>
         <ul>
-      <li><a href="Portfolio">Portfolio</a></li>   
-      <li><a href="About Me.htm">About Me</a></li>
-      <li><a class="currentlink" href="Contact Me.htm">Contact Me</a></li>
+      <li><a href="Portfolio.htm">Portfolio</a></li>   
+      <li><a href="About Me.htm"> | About Me</a></li>
+      <li><a class="currentlink" href="Contact Me.htm"> | Contact Me</a></li>
         </ul>
 
    </nav>

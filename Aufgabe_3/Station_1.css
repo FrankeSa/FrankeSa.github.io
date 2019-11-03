@@ -1,0 +1,49 @@
+body { background-image: url(./Station_1_Positionierung/images/bg.png);
+}
+
+div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+             }
+
+.mistel {
+position: absolute;
+left:0px;
+top:0px;
+margin-left: -65px;
+margin-top: -65px;
+z-index: 2;
+}
+
+.pinguin {
+
+position: absolute;
+right: -10px;
+bottom: -10px;
+z-index: 1;
+}
+
+h1 {
+    position: absolute;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    bottom: 250px;
+    left: 65px;
+}
+
+p {
+    position: absolute;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    bottom: 86px;
+    left: 65px;
+
+
+}
+
+
+

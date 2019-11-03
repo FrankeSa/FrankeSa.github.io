@@ -1,0 +1,27 @@
+body{
+background-image: url(./Station_8_Youtube/images/bg.png);
+}
+
+div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+}
+
+.iframe {
+    position: absolute;
+    left: 8%;
+    top: 10%;
+    width: 500px;
+    height: 300px;
+   }
+
+   .bandarol {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+
+   }

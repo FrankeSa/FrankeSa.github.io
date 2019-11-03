@@ -1,0 +1,32 @@
+body { background-image: url(./Station_5_Forms/images/bg.png);
+}
+
+div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+}
+
+form {
+    
+    position: absolute;
+    width: 50%;
+    bottom: 32%;
+    left: 33%;
+    color:white;
+}
+
+p{
+margin-bottom: 3px;
+}
+
+button{
+
+    margin-top:15px;
+    border:none;
+    border-radius: 3px;
+    padding: 3px 10px 3px 10px;
+}

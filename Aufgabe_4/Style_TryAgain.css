@@ -1,0 +1,11 @@
+body { background-image: url(./images/JdkJ.JPG)
+}
+
+a {text-decoration: none;
+position: absolute;
+top:420px;
+left:650px;
+border-style:solid;
+padding:10px;
+color: red;
+}

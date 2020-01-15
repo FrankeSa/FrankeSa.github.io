@@ -14,26 +14,33 @@ window.addEventListener("load", function () {
     function buildHTML() {
         var tasks = document.querySelector(".tasks");
         tasks.innerHTML = "";
-        for (var index = 0; index < tasklist.length; index++) {
+        for (var index_1 = 0; index_1 < tasklist.length; index_1++) {
             var tasks = document.querySelector(".tasks");
-            tasks.innerHTML += "<div class='line'><i id='uncheck' class='far fa-circle fa-2x'></i>" + tasklist[index] + "<i id='trash'class='far fa-trash-alt fa-2x'></i></div>";
+            tasks.innerHTML += "<div class='line'><i id='uncheck' class='far fa-circle fa-2x'></i>" + tasklist[index_1] + "<i id='trash'class='far fa-trash-alt fa-2x'></i></div>";
         }
     }
 });
-function changebutton() {
-    var dieButtons = document.querySelector("#uncheck");
-    if (dieButtons.classList.contains("fa-circle")) {
-        dieButtons.classList.remove("fa-circle");
-        dieButtons.classList.add("fa-check-circle");
+function changebutton(_event) {
+    var derButton = _event.target;
+    //Unterscheidung zwischen Löschen und checked button
+    if (derButton.classList.contains("fa-circle")) {
+        derButton.classList.remove("fa-circle");
+        derButton.classList.add("fa-check-circle");
+    }
+    else if (derButton.classList.contains("fa-check-circle")) {
+        derButton.classList.remove("fa-check-circle");
+        derButton.classList.add("fa-circle");
     }
     else {
-        dieButtons.classList.remove("fa-check-circle");
-        dieButtons.classList.add("fa-circle");
+        deletetask(index);
+        console.log("delete");
     }
 }
-/*
-function removeTask(): void {
-  var input: HTMLInputElement = document.querySelector("#newtask");
-  tasklist.pop(input.value);
-  */ 
+document.querySelector("#trash").addEventListener("click", function () {
+    deletetask(index);
+});
+function deletetask(index) {
+    tasklist.splice(index, 1);
+}
+buildHTML();
 //# sourceMappingURL=ToDoAppScript.js.map

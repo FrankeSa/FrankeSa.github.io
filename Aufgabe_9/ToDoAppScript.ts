@@ -25,7 +25,12 @@ function buildHTML(): void {
     var tasks: HTMLElement = document.querySelector(".tasks");
 
     tasks.innerHTML += "<div class='line'><i id='uncheck' class='far fa-circle fa-2x'></i>" + tasklist[index] + "<i id='trash'class='far fa-trash-alt fa-2x'></i></div>";
+  
+    document.querySelector("#trash").addEventListener("click", function (): void {
 
+      deletetask(index);
+    });
+   
 
   }
 
@@ -54,15 +59,10 @@ function changebutton(_event: Event): void {
 
 //Löschenfunktion
 
-document.querySelector("#trash").addEventListener("click", function (): void {
-
-  deletetask(index);
-});
-
 function deletetask(index: number): void {
 
-  tasklist.splice(index, 1);
-
+  tasklist.splice(index);
+  buildHTML();
 }
 
-buildHTML();
+

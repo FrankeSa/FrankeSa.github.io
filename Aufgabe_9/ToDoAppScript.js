@@ -15,9 +15,16 @@ window.addEventListener("load", function () {
 function buildHTML() {
     var tasks = document.querySelector(".tasks");
     tasks.innerHTML = "";
-    for (var index_1 = 0; index_1 < tasklist.length; index_1++) {
-        var tasks = document.querySelector(".tasks");
+    var _loop_1 = function (index_1) {
+        tasks = document.querySelector(".tasks");
         tasks.innerHTML += "<div class='line'><i id='uncheck' class='far fa-circle fa-2x'></i>" + tasklist[index_1] + "<i id='trash'class='far fa-trash-alt fa-2x'></i></div>";
+        document.querySelector("#trash").addEventListener("click", function () {
+            deletetask(index_1);
+        });
+    };
+    var tasks;
+    for (var index_1 = 0; index_1 < tasklist.length; index_1++) {
+        _loop_1(index_1);
     }
 }
 function changebutton(_event) {
@@ -34,11 +41,8 @@ function changebutton(_event) {
     }
 }
 //Löschenfunktion
-document.querySelector("#trash").addEventListener("click", function () {
-    deletetask(index);
-});
 function deletetask(index) {
-    tasklist.splice(index, 1);
+    tasklist.splice(index);
+    buildHTML();
 }
-buildHTML();
 //# sourceMappingURL=ToDoAppScript.js.map
